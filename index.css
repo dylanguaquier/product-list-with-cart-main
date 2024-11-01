@@ -101,7 +101,6 @@ body {
 }
 
 .panier-ctn .empty-card {
-  width: 50%;
   align-self: center;
 }
 
@@ -146,6 +145,10 @@ body {
 .item-price-unit {
   font-weight: 500;
   color: hsl(7, 20%, 60%);
+}
+
+.price {
+  color: hsl(14, 86%, 42%);
 }
 
 .total-units {
@@ -268,8 +271,13 @@ body {
     flex-direction: row;
     justify-content: center;
   }
+
+  .img-card {
+    max-width: 300px;
+  }
+
   .dessert-ctn {
-    max-width: 1300px;
+    max-width: 1100px;
   }
   .panier-ctn {
     max-height: fit-content;
@@ -292,5 +300,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .panier-ctn {
+    max-width: 50%;
   }
 }

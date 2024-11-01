@@ -28,10 +28,10 @@ function displayDesserts(desserts) {
 
     card.innerHTML = `
       <div class="card-card">
-        <img src="${dessert.image.mobile}" alt="${dessert.name}">
+        <img class="img-card" src="${dessert.image.mobile}" alt="${dessert.name}">
         <h4>${dessert.category}</h4>
         <h3>${dessert.name}</h3>
-        <p>Prix: ${dessert.price}$</p>
+        <p class="price">${dessert.price}$</p>
         <div class="btn-container">
           <button id="add-${dessert.name}" class="add-to-cart-button">
             <img src="/assets/images/icon-add-to-cart.svg" alt="Add to cart">
