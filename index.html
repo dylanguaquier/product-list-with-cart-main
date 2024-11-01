@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Product List with Cart</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="dessert-ctn">
+        <h1>Desserts</h1>
+        <div id="desserts"></div>
+      </div>
+      <div class="panier-ctn">
+        <h3>Your Cart (0)</h3>
+        <img
+          class="empty-card"
+          src="./assets/images/illustration-empty-cart.svg"
+          alt="Empty cart illustration"
+        />
+        <div id="panier"></div>
+        <p class="empty-text">Your added items will appear here</p>
+        <div class="order-total">
+          <p>Order Total</p>
+          <p id="total-order">$0</p>
+        </div>
+        <div class="carbon-neutral">
+          <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+          <p>This is <span>carbon-neutral</span> delivery</p>
+        </div>
+        <button id="confirm-order">Confirm Order</button>
+      </div>
+      <div class="order-confirmation">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+        <div id="confirmed-items"></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

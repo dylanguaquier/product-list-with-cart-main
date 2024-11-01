@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Text";
+  padding: 1.5em;
+  background-color: #fcf8f5;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.card h3 {
+  font-weight: 600;
+  color: hsl(14, 65%, 9%);
+}
+
+.card-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 0.3em;
+  margin-top: 0.5em;
+}
+
+.card-card h4 {
+  font-weight: 400;
+  color: hsl(12, 20%, 44%);
+  margin-top: 2em;
+}
+
+.card-card .price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: hsl(14, 86%, 42%);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+}
+
+.btn-container p {
+  font-weight: bold;
+}
+
+.btn-container button {
+  width: 150px;
+  padding: 0.5em 1em;
+  gap: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid hsl(14, 25%, 72%);
+  border-radius: 2em;
+}
+
+.btn-container button img {
+  width: 25px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#desserts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.panier-ctn {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: white;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.panier-ctn .empty-card {
+  width: 50%;
+  align-self: center;
+}
+
+.panier-ctn .empty-text {
+  align-self: center;
+}
+
+.panier-ctn h3 {
+  font-size: 1.5em;
+  color: hsl(14, 86%, 42%);
+}
+
+.panier-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0;
+}
+
+.panier-item button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.panier-order {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-quantity {
+  font-weight: bold;
+  color: hsl(14, 86%, 42%);
+  margin-right: 10px;
+}
+
+.item-price-unit {
+  font-weight: 500;
+  color: hsl(7, 20%, 60%);
+}
+
+.total-units {
+  color: hsl(7, 20%, 60%);
+  font-weight: bold;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#total-order {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.carbon-neutral {
+  display: flex;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #fcf8f5;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#confirm-order {
+  padding: 1.5em;
+  border-radius: 2em;
+  background: hsl(14, 86%, 42%);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+}
+
+.order-confirmation {
+  padding: 1em;
+  display: none; /* Initially hidden */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  border-radius: 1em;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.order-confirmation h2 {
+  font-size: 2.5em;
+}
+
+#confirmed-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
+  background-color: #fcf8f5;
+  gap: 2em;
+  border-radius: 1em;
+}
+
+.confirm-order-list {
+  display: flex;
+}
+
+.confirm-dessert-img {
+  width: 40%;
+}
+
+.confirm-order-card-ctn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fcf8f5;
+}
+
+.confirm-order-total-item-price {
+  font-weight: 600;
+}
+
+.start-new-order {
+  padding: 1em;
+  width: 100%;
+  border-radius: 2em;
+  border: none;
+  background: hsl(14, 86%, 42%);
+  color: white;
+}
+
+.confirmed-total-order-confirmation {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+
+.confirmed-total-order-confirmation h4 {
+  font-weight: 400;
+}
+
+.confirmed-total-order-confirmation p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .dessert-ctn {
+    max-width: 1300px;
+  }
+  .panier-ctn {
+    max-height: fit-content;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .order-confirmation {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+  }
+
+  .empty-card {
+    max-width: fit;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
